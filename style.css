@@ -58,7 +58,7 @@ nav ul li a:hover {
 }
 
 a {
-  color: #003366; /* Deep Blue link color */
+  color: #014f9d; /* Deep Blue link color */
 }
 
 a:hover {
@@ -85,6 +85,7 @@ a:hover {
 .skills-section {
   padding: 50px 20px;
   background-color: #f4f4f4; /* Light Gray background */
+  margin-top: 10px;
 }
 
 .skills {
@@ -99,7 +100,7 @@ a:hover {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: normal;
 }
 
@@ -174,16 +175,6 @@ a:hover {
   color: #003366; /* Deep Blue color */
 }
 
-.car_path {
-  background-color: #f4f4f4; /* Light Gray background */
-  margin: 0;
-}
-
-.car_path h2 {
-  text-align: center;
-  font-size: 28px;
-  color: #007acc; /* Darker Sky Blue color */
-}
 
 footer {
   background-color: #003366; /* Deep Blue background */
