@@ -29,24 +29,29 @@ nav ul li a:focus {
 nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;  /* Center the navigation items horizontally */
+  gap: 15px;                /* Space between navigation items */
+  flex-wrap: wrap;          /* Allow items to wrap if the screen is small */
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 15px;
+  margin: 0;                /* Remove any default margin from list items */
   font-weight: 700;
 }
+
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  align-items: center;
+  padding: 10px 15px; 
+  padding-left: 5px;      /* Reduce the padding around the buttons */
   border: solid 1px white;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   border-radius: 5px;
+  display: inline-block;
+  text-align: center;
 }
 
 nav ul li a i {
@@ -196,15 +201,17 @@ footer a:hover {
 }
 
 /* Media query for smaller screens */
+/* Mobile Styles */
 @media (max-width: 600px) {
-  .lang-div, .proj_div {
-    flex-direction: column;
-    align-items: center;
+  nav ul {
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center;    /* Center them horizontally */
   }
 
-  .language-container, .project_container {
-    width: 100%;
-    max-width: 300px;
+  nav ul li a {
+    padding: 10px;         /* Adjust the padding for mobile */
+    width: 100%;           /* Ensure each button takes full width */
+    text-align: center;    /* Center the text inside each button */
   }
 }
 
