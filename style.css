@@ -88,9 +88,9 @@ a:hover {
 }
 
 .skills-section {
-  padding: 50px 20px;
+  padding: 10px 20px;
   background-color: #f4f4f4; /* Light Gray background */
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .skills {
@@ -107,6 +107,7 @@ a:hover {
   flex-wrap: wrap;
   margin-top: 10px;
   font-weight: normal;
+  box-shadow: 
 }
 
 .language-container {
@@ -180,12 +181,39 @@ a:hover {
   color: #003366; /* Deep Blue color */
 }
 
+.cv{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: center;
+  margin-top: 10px;
+  font-weight: normal;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 40px
+  }
+
+#cv_button{
+  background-color: white;
+  border: solid 3px #007acc; /* Darker Sky Blue border */
+  height: 75px;
+  width: 200px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
 
 footer {
   background-color: #003366; /* Deep Blue background */
   color: white;
   text-align: center;
-  padding: 20px;
+  padding-right: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   position: relative;
   bottom: 0;
   width: 100%;
