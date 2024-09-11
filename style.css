@@ -1,4 +1,7 @@
+
 body {
+  font-size: 16px;
+  line-height: 1.6;
   font-family: 'Roboto', sans-serif;
   background-color: #f4f4f4; /* Light Gray background */
   color: #333333; /* Dark Gray text color */
@@ -85,6 +88,10 @@ a:hover {
   font-size: 32px;
   color: #003366; /* Deep Blue color */
   font-weight: 700;
+}
+
+section{
+  padding: 80px 20px;
 }
 
 .skills-section {
@@ -194,7 +201,6 @@ a:hover {
   }
 
 #cv_button{
-  background-color: white;
   border: solid 3px #007acc; /* Darker Sky Blue border */
   height: 75px;
   width: 200px;
@@ -204,7 +210,19 @@ a:hover {
   font-weight: bold;
   padding-top: 20px;
   border-radius: 10px;
+  background: linear-gradient(135deg, #007acc, #005fa3);
+  color: white;
+  border-radius: 15px;
+  padding: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+#cv_button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 
 
 footer {
@@ -214,6 +232,7 @@ footer {
   padding-right: 70px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-top: 50px;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -232,14 +251,14 @@ footer a:hover {
 /* Mobile Styles */
 @media (max-width: 600px) {
   nav ul {
-    flex-direction: column; /* Stack the items vertically */
-    align-items: center;    /* Center them horizontally */
+    display: none;
   }
+  .burger-menu {
+    display: block;
+  }
+}
 
-  nav ul li a {
-    padding: 10px;         /* Adjust the padding for mobile */
-    width: 100%;           /* Ensure each button takes full width */
-    text-align: center;    /* Center the text inside each button */
-  }
+.burger-menu {
+  cursor: pointer;
 }
 
