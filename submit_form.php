@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
+    $name = htmlspecialchars($_POST['full_name']);
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
     $message = htmlspecialchars($_POST['message']);
 
