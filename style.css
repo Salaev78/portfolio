@@ -236,7 +236,7 @@ section{
   color: #003366; 
 }
 
-#first_name {
+#full_name {
   margin-right: 15px;
   margin-bottom: 15px;
   height: 30px;
@@ -248,7 +248,7 @@ section{
   
 }
 
-#last_name{
+#email{
   margin-left: 15px;
   margin-bottom: 15px;
   height: 30px;
@@ -259,7 +259,7 @@ section{
   color: black;
 }
 
-#contact_text{
+#message{
   margin-bottom: 15px;
   height: 75px;
   width: 520px;
@@ -325,16 +325,16 @@ footer a:hover {
   cursor: pointer;
 }
 
-#first_name{
+#full_name{
   width: 200px;
   margin-left: 25px;
 }
 
-#last_name{
+#email{
   width:200px;
   padding-rigth: 25px
 }
 
-#contact_text{
+#message{
   width:300px;
 }
