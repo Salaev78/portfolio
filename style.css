@@ -50,7 +50,7 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   padding: 10px 15px; 
-  padding-left: 5px;      /* Reduce the padding around the buttons */
+  padding-left: 15px;      /* Reduce the padding around the buttons */
   border: solid 1px white;
   border-radius: 5px;
   display: inline-block;
