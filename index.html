@@ -82,7 +82,25 @@
   <div id="cv" class="cv">
    <a id="cv_button" class="cv" href="https://docs.google.com/document/d/1qt4jCD2zisHUJt758HLKl1s5Cy0PUwoQZpa8qmAlWjI/edit" target="_blank">My CV</a>
   </div>
+ <button id="backToTop">Back to Top</button>
 
+ <script>
+ window.addEventListener('scroll', function() {
+     const button = document.getElementById('backToTop');
+     if (window.scrollY > 300) {
+         button.style.display = 'block';
+     } else {
+         button.style.display = 'none';
+     }
+ });
+ 
+ document.getElementById('backToTop').addEventListener('click', function() {
+     window.scrollTo({
+         top: 0,
+         behavior: 'smooth'
+     });
+ });
+ </script>
 
   <footer>
     <p id="contact">Contact me at <strong><a href="mailto:tsalaev2@gmail.com">tsalaev2@gmail.com</a><strong></p>
