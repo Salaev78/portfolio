@@ -223,7 +223,70 @@ section{
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+#contact_div{
+  background-color: white;
+  border: solid 3px #007acc; /* Darker Sky Blue border */
+  padding: 20px;
+  margin-left: 20px;
+  text-align: center;
+}
+.contact h2{
+  background-color: white;
+  margin-top: 0px;
+  color: #003366; 
+}
 
+#first_name {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  height: 30px;
+  text-align: center;
+  border: solid 2px #007acc;
+  font-size: 18px;
+  font-weight: bold;
+  color: #003366;
+  
+}
+
+#last_name{
+  margin-left: 15px;
+  margin-bottom: 15px;
+  height: 30px;
+  text-align: center;
+  border: solid 2px #007acc;
+  font-size: 18px;
+  font-weight: bold; 
+  color: black;
+}
+
+#contact_text{
+  margin-bottom: 15px;
+  height: 75px;
+  width: 520px;
+  text-align: center;
+  border: solid 2px #007acc;
+  font-weight: bold;
+  font-size: 18px;
+  color: #003366;
+}
+
+#submit_button{
+  border: solid 3px #007acc; /* Darker Sky Blue border */
+  height: 50px;
+  width: 150px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 0px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #007acc, #005fa3);
+  color: white;
+  border-radius: 15px;
+  padding: px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 footer {
   background-color: #003366; /* Deep Blue background */
