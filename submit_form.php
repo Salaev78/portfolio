@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    $to = "your_email@example.com"; // Replace with your email
+    $to = "t.salaev@outlook.com"; // Replace with your email
     $subject = "New contact form submission";
     $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
     $headers = "From: $email";
