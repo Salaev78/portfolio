@@ -1,3 +1,7 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
 
 body {
   font-size: 16px;
