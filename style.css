@@ -176,17 +176,18 @@ section{
 .carousel-container {
   position: relative;
   overflow: hidden; /* Hide overflow to ensure slides stay within the container */
-  width: 100%; /* Width of the carousel container */
-  height: 500px; /* Height of the carousel container */
+  width: 100vw; /* Full viewport width */
+  height: 500px; /* Adjust based on your needs */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
 }
 
 .carousel-slide {
   display: flex;
+  align-items: center; /* Center slides vertically within the container */
   transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
-  width: max-content; /* Adjust width based on content */
-  height: 100%; /* Ensure height matches the container */
-  padding-left: 100px;
-  padding-right: 100px;
+  width: max-content; /* Ensure full width for scrolling */
 }
 
 .project_container {
@@ -197,8 +198,7 @@ section{
   height: 250px; /* Height of each project slide */
   box-sizing: border-box;
   text-align: center;
-  flex: 0 0 auto; /* Ensure slides do not shrink */
-  margin-right: 75px; /* Space between slides */
+  margin-right: 30px; /* Space between slides */
 }
 
 /* Hide the last slide's margin */
@@ -208,7 +208,7 @@ section{
 
 .prev, .next {
   position: absolute;
-  top: 30%; /* Center vertically */
+  top: 50%; /* Center vertically */
   transform: translateY(-50%); /* Adjust position to center correctly */
   background-color: #007acc; /* Darker Sky Blue color */
   color: white;
