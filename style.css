@@ -185,7 +185,7 @@ section{
   transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
   width: max-content; /* Adjust width based on content */
   height: 100%; /* Ensure height matches the container */
-  padding-left: 100px;
+  padding-left: 150px;
   padding-right: 100px;
 }
 
