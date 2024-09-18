@@ -29,7 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const slides = Array.from(track.children);
   const nextButton = document.querySelector('.next');
   const prevButton = document.querySelector('.prev');
-  const slideWidth = slides[0].getBoundingClientRect().width + 50; // Adjust for the margin-right of 50px
+  
+  // Calculate the width of one slide including the margin
+  const slideWidth = slides[0].getBoundingClientRect().width + 30; // Adjust based on the margin-right in CSS
   let currentIndex = 0;
 
   function updateCarousel() {
@@ -48,6 +50,30 @@ document.addEventListener('DOMContentLoaded', function() {
     if (currentIndex > 0) {
       currentIndex -= 1;
       updateCarousel();
+    }
+  });
+
+  // Optional: Add swipe support for mobile devices
+  let touchStartX = 0;
+  
+  track.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+  });
+
+  track.addEventListener('touchend', (e) => {
+    const touchEndX = e.changedTouches[0].clientX;
+    if (touchStartX - touchEndX > 50) {
+      // Swipe left
+      if (currentIndex < slides.length - 1) {
+        currentIndex += 1;
+        updateCarousel();
+      }
+    } else if (touchStartX - touchEndX < -50) {
+      // Swipe right
+      if (currentIndex > 0) {
+        currentIndex -= 1;
+        updateCarousel();
+      }
     }
   });
 });
