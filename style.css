@@ -163,35 +163,80 @@ section{
 .projects-section {
   padding: 50px 20px;
   background-color: #f4f4f4; /* Light Gray background */
+  position: relative; /* Required for positioning the arrows */
 }
 
 .projects {
   text-align: center;
   font-size: 28px;
   color: #007acc; /* Darker Sky Blue color */
+  margin-bottom: 20px; /* Space below the title */
 }
 
-.proj_div {
+.carousel-container {
+  position: relative;
+  overflow: hidden; /* Hide overflow to ensure slides stay within the container */
+  width: 100%; /* Width of the carousel container */
+  height: 500px; /* Height of the carousel container */
+}
+
+.carousel-slide {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
+  width: max-content; /* Adjust width based on content */
+  height: 100%; /* Ensure height matches the container */
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .project_container {
   background-color: white;
   border: solid 3px #007acc; /* Darker Sky Blue border */
   padding: 20px;
-  width: 200px;
+  width: 200px; /* Width of each project slide */
+  height: 250px; /* Height of each project slide */
   box-sizing: border-box;
   text-align: center;
+  flex: 0 0 auto; /* Ensure slides do not shrink */
+  margin-right: 75px; /* Space between slides */
 }
 
-.project_container h3 {
-  margin: 0 0 10px 0;
-  color: #003366; /* Deep Blue color */
+/* Hide the last slide's margin */
+.carousel-slide > .project_container:last-child {
+  margin-right: 0;
 }
+
+.prev, .next {
+  position: absolute;
+  top: 30%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust position to center correctly */
+  background-color: #007acc; /* Darker Sky Blue color */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+.prev {
+  left: 10px; /* Position left */
+}
+
+.next {
+  right: 10px; /* Position right */
+}
+
+.prev:hover, .next:hover {
+  background-color: #005fa3; /* Darker gradient background on hover */
+}
+
+
 
 .cv{
   display: flex;
