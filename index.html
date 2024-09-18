@@ -12,16 +12,15 @@
 <body>
   <header>
     <h1>Timur Salaev</h1>
-<nav aria-label="Main navigation">
-  <ul>
-    <li><a href="#about" aria-label="About section"><i class="fas fa-user"></i> About</a></li>
-    <li><a href="#skills" aria-label="Skills section"><i class="fas fa-code"></i> Skills</a></li>
-    <li><a href="#projects" aria-label="Projects section"><i class="fas fa-project-diagram"></i> Projects</a></li>
-    <li><a href="#cv" aria-label="CV section"><i class="fas fa-envelope"></i> CV</a></li>
-    <li><a href="#contact" aria-label="Contact section"><i class="fas fa-envelope"></i> Contact</a></li>
-  </ul>
-</nav>
-
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about" aria-label="About section"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#skills" aria-label="Skills section"><i class="fas fa-code"></i> Skills</a></li>
+        <li><a href="#projects" aria-label="Projects section"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        <li><a href="#cv" aria-label="CV section"><i class="fas fa-envelope"></i> CV</a></li>
+        <li><a href="#contact" aria-label="Contact section"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
   </header>
   
   <section id="about" class="intro">
@@ -37,8 +36,7 @@
         <i class="fab fa-html5"></i>
         <h3>HTML</h3>
         <ul class="language-list">
-          <li>- HTML beginner/intermediate Course<li>
-            <br>
+          <li>- HTML beginner/intermediate Course</li>
           <li>- Beginner Web Dev Course</li>
         </ul>
       </div>
@@ -46,8 +44,7 @@
         <i class="fab fa-css3-alt"></i>
         <h3>CSS</h3>
         <ul class="language-list">
-          <li>- CSS beginner/intermediate Course<li>
-            <br>
+          <li>- CSS beginner/intermediate Course</li>
           <li>- Beginner Web Dev Course</li>
         </ul>
       </div>
@@ -55,8 +52,7 @@
         <i class="fas fa-database"></i>
         <h3>SQL</h3>
         <ul class="language-list">
-          <li>- SQL beginner/intermediate Course<li>
-            <br>
+          <li>- SQL beginner/intermediate Course</li>
           <li>- Beginner Data Analyst Course</li>
         </ul>
       </div>
@@ -64,33 +60,46 @@
         <i class="fas fa-coffee"></i>
         <h3>Java</h3>
         <ul class="language-list">
-          <li>- Beginner Java course<li>
+          <li>- Beginner Java course</li>
         </ul>
       </div>      
     </div>
   </section>
   
-  <section id="projects" class="projects-section">
-    <h2 class = "projects">My projects</h2>
-    <div class="proj_div">
+<section id="projects" class="projects-section">
+  <h2 class="projects">My Projects</h2>
+  <div class="carousel-container">
+    <div class="carousel-slide">
       <div class="project_container">
-        <h3><a href="https://zs.holdings/" target="_blank">ZS Holdings</a> </h3>
-        <p>Website which shows the current and completed renovating projects</p>
-        </div> 
+        <h3><a href="https://zs.holdings/" target="_blank">ZS Holdings</a></h3>
+        <p>Website that shows the current and completed renovating projects</p>
+      </div>
+      <div class="project_container">
+        <h3>Portfolio</h3>
+        <p>The Portfolio you are currently visiting.</p>
+      </div>    
+      <div class="project_container" id="coming_soon">
+        <h3>Coming soon!<h3>
+      </div>      
+      <!-- Add more slides here as needed -->
     </div>
-  </section>
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+</section>
+
   
   <div id="cv" class="cv">
-   <a id="cv_button" class="cv" href="https://docs.google.com/document/d/1qt4jCD2zisHUJt758HLKl1s5Cy0PUwoQZpa8qmAlWjI/edit" target="_blank">My CV</a>
+    <a id="cv_button" class="cv" href="https://docs.google.com/document/d/1qt4jCD2zisHUJt758HLKl1s5Cy0PUwoQZpa8qmAlWjI/edit" target="_blank">My CV</a>
   </div>
- <button id="backToTop">Back to Top</button>
-
- 
-
+  
+  <button id="backToTop">Back to Top</button>
+  
   <footer>
-    <p id="contact">Contact me at <strong><a href="mailto:tsalaev2@gmail.com">tsalaev2@gmail.com</a><strong></p>
+    <p id="contact">Contact me at <strong><a href="mailto:tsalaev2@gmail.com">tsalaev2@gmail.com</a></strong></p>
     <p>Follow me on <a href="https://de.linkedin.com/in/salaev-timur" target="_blank">LinkedIn</a> | <a href="https://github.com/Salaev78/" target="_blank">GitHub</a></p>
   </footer>
-<script src="scripts.js"></script>
+  
+  <script src="scripts.js"></script>
 </body>
 </html>
