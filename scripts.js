@@ -23,3 +23,31 @@ document.getElementById('backToTop').addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const track = document.querySelector('.carousel-slide');
+  const slides = Array.from(track.children);
+  const nextButton = document.querySelector('.next');
+  const prevButton = document.querySelector('.prev');
+  const slideWidth = slides[0].getBoundingClientRect().width + 50; // Adjust for the margin-right of 50px
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    const offset = -currentIndex * slideWidth;
+    track.style.transform = `translateX(${offset}px)`;
+  }
+
+  nextButton.addEventListener('click', function() {
+    if (currentIndex < slides.length - 1) {
+      currentIndex += 1;
+      updateCarousel();
+    }
+  });
+
+  prevButton.addEventListener('click', function() {
+    if (currentIndex > 0) {
+      currentIndex -= 1;
+      updateCarousel();
+    }
+  });
+});
