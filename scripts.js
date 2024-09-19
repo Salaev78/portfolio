@@ -17,28 +17,25 @@ window.addEventListener('scroll', function() {
     }
 });
 
-document.getElementById('backToTop').addEventListener('click', function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
 document.addEventListener('DOMContentLoaded', function() {
   const track = document.querySelector('.carousel-slide');
   const slides = Array.from(track.children);
   const nextButton = document.querySelector('.next');
   const prevButton = document.querySelector('.prev');
-  
-  // Calculate the width of one slide including the margin
-  const slideWidth = slides[0].getBoundingClientRect().width + 30; // Adjust based on the margin-right in CSS
+
   let currentIndex = 0;
 
   function updateCarousel() {
-    const offset = -currentIndex * slideWidth;
+    const slideWidth = slides[0].getBoundingClientRect().width; // Corrected width calculation
+    const offset = -currentIndex * slideWidth; // No need to include margins
     track.style.transform = `translateX(${offset}px)`;
+
+    // Disable/enable buttons based on the current index
+    prevButton.style.display = currentIndex === 0 ? 'none' : 'block';
+    nextButton.style.display = currentIndex === slides.length - 1 ? 'none' : 'block';
   }
 
+  // Next and Prev button functionality
   nextButton.addEventListener('click', function() {
     if (currentIndex < slides.length - 1) {
       currentIndex += 1;
@@ -76,4 +73,9 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
+
+  // Initially update the carousel and hide Prev button if at start
+  updateCarousel();
 });
+
+
